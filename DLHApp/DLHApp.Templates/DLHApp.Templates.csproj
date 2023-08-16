@@ -1,0 +1,23 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Azure\DataFactory\LinkedService\Windows File Share Linked Service.cshtml" />
+    <None Remove="SqlServer\Table\Create Table.cshtml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="Azure\DataFactory\LinkedService\Windows File Share Linked Service.cshtml" />
+    <EmbeddedResource Include="SqlServer\Table\Create Table.cshtml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\DLHApp.Model\DLHApp.Model.csproj" />
+  </ItemGroup>
+
+</Project>
